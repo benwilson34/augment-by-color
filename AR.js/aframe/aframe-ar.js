@@ -175,9 +175,12 @@ AFRAME.registerComponent('artoolkitmarker', {
 		}else if( this.data.preset === 'kanji' ){
 			this.data.type = 'pattern'
 			this.data.patternUrl = THREEx.ArToolkitContext.baseURL+'../data/data/patt.kanji'			
-		}else if( this.data.preset === 'poster' ){
+		}else if( this.data.preset === 'poster' ){ // custom marker for the poster
 			this.data.type = 'pattern'
-			this.data.patternUrl = THREEx.ArToolkitContext.baseURL+'../data/data/patt.poster1'			
+			this.data.patternUrl = THREEx.ArToolkitContext.baseURL+'../data/data/patt.poster2'			
+		}else if( this.data.preset === 'card' ){ // custom marker for the card
+			this.data.type = 'pattern'
+			this.data.patternUrl = THREEx.ArToolkitContext.baseURL+'../data/data/patt.card'			
 		}else {
 			console.assert( this.data.preset === '', 'illegal preset value '+this.data.preset)
 		}
