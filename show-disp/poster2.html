@@ -16,11 +16,11 @@
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded artoolkit='sourceType: webcam;'>
 		<a-assets>
-      			<a-asset-item id="poster-obj" src="megan-models/postermodel_transparent.obj"></a-asset-item>
-      			<a-asset-item id="poster-mtl" src="megan-models/postermodel_transparent.mtl"></a-asset-item>
+      			<a-asset-item id="poster-obj" src="megan-models/postermodel.obj"></a-asset-item>
+      			<a-asset-item id="poster-mtl" src="megan-models/postermodel.mtl"></a-asset-item>
     		</a-assets>
     		<!-- Using the asset management system. -->
-    		<a-obj-model src="#poster-obj" mtl="#poster-mtl" scale='3.0 3.0 3.0'></a-obj-model>
+    		<a-obj-model src="#poster-obj" mtl="#poster-mtl" scale='3.0 3.0 3.0' material='opacity: 0.5;'></a-obj-model>
 		<a-marker-camera preset='poster'></a-marker-camera>
 	</a-scene>
 </body>
