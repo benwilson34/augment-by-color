@@ -1,0 +1,12 @@
+newmtl postermodel_transparent:lambert6SG
+illum 4
+Kd 0.06 0.30 0.73
+Ka 0.00 0.00 0.00
+Tf 0.37 0.37 0.37
+Ni 1.00
+newmtl postermodel_transparent:lambert10SG
+illum 4
+Kd 0.89 0.16 0.06
+Ka 0.00 0.00 0.00
+Tf 0.25 0.25 0.25
+Ni 1.00
