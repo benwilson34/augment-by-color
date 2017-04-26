@@ -16,11 +16,13 @@
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded artoolkit='sourceType: webcam;'>
 		<a-assets>
-      			<a-asset-item id="card-obj" src="megan-models/ARtest_3_30.obj"></a-asset-item>
-      			<a-asset-item id="card-mtl" src="megan-models/ARtest_3_30.mtl"></a-asset-item>
+<!--      			<a-asset-item id="card-obj" src="megan-models/4_25.obj"></a-asset-item>
+      			<a-asset-item id="card-mtl" src="megan-models/4_25.mtl"></a-asset-item>-->
+                    <img id="card-img" src="card.png">
     		</a-assets>
     		<!-- Using the asset management system. -->
-    		<a-obj-model src="#card-obj" mtl="#card-mtl" scale='1.5 1.5 1.5'></a-obj-model>
+    		<!--<a-obj-model src="#card-obj" mtl="#card-mtl" scale='0.01 0.01 0.01'></a-obj-model>-->
+                <a-image src="#card-img" rotation="270 0 0"></a-image>
 		<a-marker-camera preset='card'></a-marker-camera>
 	</a-scene>
 </body>
